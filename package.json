@@ -1,0 +1,40 @@
+{
+  "name": "untitled3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "engines": {
+    "node": "8.10.0",
+    "npm": "5.6.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.6.1",
+    "bluebird": "^3.5.3",
+    "body-parser": "^1.18.3",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "fs": "0.0.1-security",
+    "handlebars": "^4.2.0",
+    "lodash": "^4.17.15",
+    "mixin-deep": "^2.0.1",
+    "mongoose": "^5.3.9",
+    "needle": "^2.2.4",
+    "node-datetime": "^2.1.2",
+    "nodemon": "^1.18.7",
+    "npm": "^6.4.1",
+    "path": "^0.12.7",
+    "request": "^2.88.0",
+    "set-value": "^3.0.1",
+    "simple-node-logger": "^0.93.40",
+    "stage": "^1.0.0",
+    "telegraf": "^3.25.5",
+    "telegraf-flow": "^8.3.0",
+    "webshot": "^0.18.0"
+  }
+}
