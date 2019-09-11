@@ -1241,6 +1241,7 @@ bot.on('message', ctx => {
     const forward = ctx.message.reply_to_message;
 
     if (forward && id === Config.admin) {
+        try {
         const text1 = ctx.message.reply_to_message.text;
         const text = ctx.message.text;
         const markdown =`
@@ -1253,9 +1254,14 @@ bot.on('message', ctx => {
 
         const id = ctx.message.reply_to_message.forward_from.id;
 
-        ctx.telegram.sendMessage(ctx.message.chat.id=`${id}`, markdown,{
-            parse_mode: 'Markdown'
-        });
+            ctx.telegram.sendMessage(ctx.message.chat.id = `${id}`, markdown, {
+                parse_mode: 'Markdown'
+            })
+        }catch (err) {
+
+           console.log(err)
+
+        }
         console.log(ctx.message.reply_to_message.text)
     }
     console.log(ctx.message)
